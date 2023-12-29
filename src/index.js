@@ -24,6 +24,7 @@ app.use('/api/auth', userRoutes)//Authentication
 app.use('/api', blogRoutes)
 
 app.use('/api-docs', swagger_ui.serve, swagger_ui.setup(swaggerSpec))
+
 //Test case
 app.get('/', (req,res)=>{
     res.status(201).json({ message : "Hello World" })
