@@ -14,7 +14,6 @@ const transporter = nodemailer.createTransport({
     }
 })
 
-
 const register_controller = async_handler(async(req,res)=>{
     const register_result = await userSchema.validateAsync(req.body)
 
