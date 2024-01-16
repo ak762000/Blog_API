@@ -46,7 +46,7 @@ const getblogbyid = async_handler(async(req,res)=>{
     const getID = req.params.id
     const blog = await Blog.findOne({
         _id : getID,
-        owner : req.user._id
+        owner : req.user._id    
     })
     if(!blog){
         return res.status(400).json({ message : 'blog not found!'})

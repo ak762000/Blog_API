@@ -4,7 +4,7 @@
   "description": "Blog API Project",
   "main": "index.js",
   "scripts": {
-    "test": "index.js",
+    "start": "node ./src/index.js",
     "dev": "nodemon ./src/index.js"
   },
   "author": "Anurag Krishnan",
