@@ -13,7 +13,7 @@ const swaggerSpec = require('./helpers/swagger')
 // const auth = require('./middlewares/auth')
 
 //Initialize the port number 
-const port = process.env.PORT || 7000
+const port = process.env.PORT || 7000   
 
 
 app.use(cors())
@@ -30,7 +30,7 @@ app.get('/', (req,res)=>{
     res.status(201).json({ message : "Hello World" })
 })
 
-//Server listening
+//Listen to server
 app.listen(port, ()=>{
     console.log(`Server started at port ${port}`)
 })

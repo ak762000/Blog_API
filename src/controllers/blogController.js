@@ -84,6 +84,6 @@ const deleteBlog = async_handler(async(req,res)=>{
 
 
 
-
+                                                                                                                                            
 
 module.exports = {createBlog, getallblogs, getblogbyid, updateBlog, deleteBlog}
